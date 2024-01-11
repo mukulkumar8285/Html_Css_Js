@@ -2,13 +2,15 @@
 
 ## Overview
 
-The DOM Project is a [brief description of your project]. This project is designed to [mention the purpose and goals of your project].
+The DOM Project is a web development project focused on enhancing and simplifying interactions with the Document Object Model (DOM). By providing a set of utilities and tools, this project aims to streamline DOM manipulation and make web development more efficient.
 
 ## Features
 
-- **Feature 1:** [Describe feature 1]
-- **Feature 2:** [Describe feature 2]
-- **Feature 3:** [Describe feature 3]
+- **DOM Selector Engine:** A powerful selector engine that allows developers to efficiently query and manipulate DOM elements.
+
+- **Event Handling:** Simplified event handling with a comprehensive set of functions to attach, detach, and manage event listeners.
+
+- **Animation Framework:** An animation framework for creating smooth and responsive animations on web pages.
 
 ## Getting Started
 
@@ -16,11 +18,10 @@ These instructions will help you set up the project on your local machine for de
 
 ### Prerequisites
 
-- [List any prerequisites or dependencies needed to run the project]
-
+Ensure you have the following prerequisites installed on your machine:
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/dom-project.git
+   git clone https://github.com/mukulkumar8285/Html_Css_Js.git
