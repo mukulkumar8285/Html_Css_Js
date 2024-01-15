@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./week3.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Products</h1>
+    <div class="product">
+        <p>Product-1</p>
+        <p>100</p>
+        <div class="input">
+            <button id="Add" onclick="Add_Qty()"> + </button>
+            <input type="text" id="number" value="2" />
+            <button id="Sub" onclick="Sub_Qty()"> - </button>
+        </div>
+    </div>
+    <div class="product">
+        <p>Product-2</p>
+        <p>200</p>
+        <div class="input">
+            <button id="Add" onclick="Add_Qty1()"> + </button>
+            <input type="text" id="number1" value="3" />
+            <button id="Sub" onclick="Sub_Qty1()"> - </button>
+        </div>
+        </div>
+        <div class="product">
+            <p>Product-3</p>
+            <p>300</p>
+        <div class="input">
+            <button id="Add" onclick="Add_Qty2()"> + </button>
+            <input type="text" id="number2" value="0" />
+            <button id="Sub" onclick="Sub_Qty2()"> - </button>
+        </div>
+    </div>
+</div>
+<div class="calculate">
+    <button onclick="addToCart()">Add to Cart</button>
+<div id="result1"></div>
+<button onclick="addToCart1()">Add to Cart</button>
+<div id="result2"></div>
+<button onclick="addToCart2()">Add to Cart</button>
+<div id="result3"></div>
+</div>
+    <script src="./week3.js"></script>
+    <script src="./week-3/2.js"></script>
+</body>
+
+</html>
