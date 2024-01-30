@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Auto Save Textarea</h1>
+    <textarea id="textinput" rows="15px" cols="100px" placeholder="Input Your Text"></textarea>
+</div>
+    <script>
+     const inputDate = document.getElementById("textinput");
+     inputDate.addEventListener("input" , textautosave);
+     
+     function textautosave(){
+        localStorage.setItem("savedtext" , inputDate.value);
+    }
+  
+       inputDate.value =  localStorage.getItem("savedtext");
+
+    </script>
+</body>
+</html>
