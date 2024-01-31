@@ -1,53 +1,62 @@
-// Check if user information is already stored in local storage
-const storedUserInfo = localStorage.getItem("userInformation");
+const storeinformation = localStorage.getItem("userInformation");
 
-if (storedUserInfo) {
-    const userInfo = JSON.parse(storedUserInfo);
+if (storeinformation) {
+    console.log(storeinformation);
+    const data = JSON.parse(storeinformation);
+    console.log(data);
 
-    // Display user information in the card
-    document.getElementById("first-name").textContent = userInfo.firstName;
-    document.getElementById("last-name").textContent = userInfo.lastName;
-    document.getElementById("country").textContent = userInfo.country;
-    document.getElementById("phone-number").textContent = userInfo.phoneNumber;
-    document.getElementById("state").textContent = userInfo.state;
-    document.getElementById("city").textContent = userInfo.city;
-    document.getElementById("village").textContent = userInfo.village;
-}else{
-    storeUserInfo();
+    document.getElementById("firstName").textContent = data.firstname;
+    document.getElementById("lastname").textContent = data.lastname;
+    document.getElementById("country").textContent = data.country;
+    document.getElementById("phone").textContent = data.phone;
+    document.getElementById("state").textContent = data.state;
+    document.getElementById("city").textContent = data.city;
+    document.getElementById("village").textContent = data.village;
+}
+else {
+    printinformation();
 }
 
-// Function to store user information in local storage
-function storeUserInfo() {
-    const firstName = prompt("Enter your first name:");
-    const lastName = prompt("Enter your last name:");
+
+function printinformation() {
+    const firstname = prompt("Enter Your First Name");
+    const lastname = prompt("Enter your last name:");
     const country = prompt("Enter your country:");
-    const phoneNumber = prompt("Enter your phone number:");
+    const phone = prompt("Enter your phone number:");
     const state = prompt("Enter your state:");
     const city = prompt("Enter your city:");
     const village = prompt("Enter your village:");
 
-    const userInfo = {
-        firstName,
-        lastName,
+
+
+    const data = {
+        firstname,
+        lastname,
         country,
-        phoneNumber,
+        phone,
         state,
         city,
-        village,
+        village
     };
 
-    // Store user information in local storage as a JSON string
-    localStorage.setItem("userInformation", JSON.stringify(userInfo));
+    localStorage.setItem("userInformation", JSON.sptringify(data));
 
-    // Display user information in the card
-    document.getElementById("first-name").textContent = userInfo.firstName;
-    document.getElementById("last-name").textContent = userInfo.lastName;
-    document.getElementById("country").textContent = userInfo.country;
-    document.getElementById("phone-number").textContent = userInfo.phoneNumber;
-    document.getElementById("state").textContent = userInfo.state;
-    document.getElementById("city").textContent = userInfo.city;
-    document.getElementById("village").textContent = userInfo.village;
+
+    document.getElementById("firstName").textContent = data.firstname;
+    document.getElementById("lastname").textContent = data.lastname;
+    document.getElementById("country").textContent = data.country;
+    document.getElementById("phone").textContent = data.phone;
+    document.getElementById("state").textContent = data.state;
+    document.getElementById("city").textContent = data.city;
+    document.getElementById("village").textContent = data.village;
+
 }
 
-// Call the function to store user information
-// storeUserInfo();
+
+
+    
+
+   
+
+    // Use the entered values to update the DOM
+   
