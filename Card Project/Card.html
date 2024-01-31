@@ -6,56 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main">
-        <div id="userDate">
-            <span class="input">First Name</span>
-            <span id="first-name"></span>
-        </div>
-        <div id="userDate">
-            <span class="input">last Name</span>
-            <span id="last-name"></span>
-        </div>
-        <div id="userDate">
-            <span class="input">number</span>
-            <span id="number"></span>
-        </div>
-        <div id="userDate">
-            <span class="input">city</span>
-            <span id="city"></span>
-        </div>     
+    <div>
+        <span class="labal">First Name:</span>
+        <span id="firstName"></span>
     </div>
-    <script>
-        const enterinformation = localStorage.getItem("userInformation");
-
-        if(enterinformation){
-            const date = JSON.parse(enterinformation);
-            document.getElementById("first-name").textContent = date.firstname;
-            document.getElementById("last-name").textContent = date.lastname;
-            document.getElementById("number").textContent = date.number;
-            document.getElementById("city").textContent = date.city;
-        }
-
-    function enterinformation(){
-        const firstname = prompt("Enter Your First");
-        const lastname = prompt("Enter Your lastname");
-        const number = prompt("Enter Your number");
-        const city = prompt("Enter Your city");
-
-        function storeinformation{
-            firstname,
-            lastname,
-            number,
-            city
-        };
-   
-
-    localStorage.setItem("userInformation", JSON.stringify(date));
-
-    document.getElementById("first-name").textContent = date.firstname;
-    document.getElementById("last-name").textContent = date.lastname;
-    document.getElementById("number").textContent = date.number;
-    document.getElementById("city").textContent = date.city;
-}
-    </script>
+    <div>
+        <span class="labal">last Name:</span>
+        <span id="lastname"></span>
+    </div>
+    <div>
+        <span class="labal">country Name:</span>
+        <span id="country"></span>
+    </div>
+    <div>
+        <span class="labal">Phone Number:</span>
+        <span id="phone"></span>
+    </div>
+    <div>
+        <span class="labal">State:</span>
+        <span id="state"></span>
+    </div>
+    <div>
+        <span class="labal">City:</span>
+        <span id="city"></span>
+    </div>
+    <div>
+        <span class="labal">Village:</span>
+        <span id="village"></span>
+    </div>
+    <script src="./Casd.js"></script>
 </body>
 </html>
