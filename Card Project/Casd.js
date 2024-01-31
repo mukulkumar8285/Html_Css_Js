@@ -39,7 +39,7 @@ function printinformation() {
         village
     };
 
-    localStorage.setItem("userInformation", JSON.sptringify(data));
+    localStorage.setItem("userInformation", JSON.stringify(data));
 
 
     document.getElementById("firstName").textContent = data.firstname;
