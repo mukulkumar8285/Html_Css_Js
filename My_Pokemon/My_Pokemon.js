@@ -58,7 +58,7 @@ async function DisplyPokeMon() {
         typesParagraph.textContent = Upper_Case(pokemonData.types.join(', ')); // Corrected this line
         pokemonDiv.appendChild(typesParagraph);
         typesParagraph.id = "background";
-        typesParagraph.style.backgroundColor = ChangeBackground(pokemonData.types);
+        pokemonDiv.style.backgroundColor = ChangeBackground(pokemonData.types);
         // typesParagraph.style.backgroundColor = ChangeBackground(pokemonData.types);
     
 
