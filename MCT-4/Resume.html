@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Resume.css">
+    <script src="./Resume.js" defer></script>
+    
+</head>
+
+<body>
+
+    <div class="information" style="text-transform: uppercase;">
+        <div class="Divide_Col">
+
+            <h1>Personal Details</h1>
+            <div id="Input_Text">
+                <label for="Name" style="font-weight: 900;">Name: </label>
+                <input type="text" id="Name" style="text-transform: uppercase;" />
+            </div>
+            <div id="Input_Text">
+                <label for="Email" style="font-weight: 900;">Email: </label>
+                <input type="text" id="Email" />
+            </div>
+            <div id="Input_Text">
+                <label for="Phone" style="font-weight: 900;">Phone: </label>
+                <input type="text" id="Phone" style="text-transform: uppercase;" />
+            </div>
+            <label for="Address" style="font-weight: 900;">Address:</label>
+            <div id="Input_Text width">
+                <textarea name="Address" id="Address" cols="41" rows="10"></textarea>
+
+            </div>
+            <div id="Input_Text">
+                <label for="Name" style="font-weight: 900;">Country: </label>
+                <input type="text" id="Country" style="text-transform: uppercase;" />
+            </div>
+            <div id="Education" style="margin-top:10px; ">
+                <u style="font-weight: 900;">Education</u><br>
+                <label for="text">Passing Year</label>
+                <input type="text" id="Passing_Year">
+                <label>Enter Your Degree</label>
+                <input type="text" id="degree_Name" />
+                <label for="Collage">University/College/School</label>
+                <input type="text" id="Collage_Name" style="text-transform: uppercase;" />
+                <label for="Skills">Skills :</label>
+                <input type="text" id="Skills" style="text-transform: uppercase;" />
+                <button class="Education_Button" onclick="Show_Info()">+Education</button>
+            </div>
+            <div id="Education2" style="display: none; margin-top:10px;">
+                <u style="font-weight: 900;">Education1</u><br>
+                <label for="text">Passing Year</label>
+                <input type="text" id="Passing_Year">
+                <label>Enter Your Degree</label>
+                <input type="text" id="degree_Name" />
+                <label for="Collage">University/College/School</label>
+                <input type="text" id="Collage_Name" style="text-transform: uppercase;" />
+                <label for="Skills">Skills :</label>
+                <input type="text" id="Skills" style="text-transform: uppercase;" />
+                <button class="Education_Button2" onclick="Show_Info1()">+Education</button>
+            </div>
+            <div id="Education3" style="display: none; margin-top:10px;">
+                <u style="font-weight: 900;">Education2</u><br>
+                <label for="text">Passing Year</label>
+                <input type="text" id="Passing_Year">
+                <label>Enter Your Degree</label>
+                <input type="text" id="degree_Name" />
+                <label for="Collage">University/College/School</label>
+                <input type="text" id="Collage_Name" style="text-transform: uppercase;" />
+                <label for="Skills">Skills :</label>
+                <input type="text" id="Skills" style="text-transform: uppercase;" />
+                <button class="Education_Button">+Education</button>
+            </div>
+            <div id="Language1">
+                <label for="skills" style="font-weight: 900;">Language</label>
+                <input type="text" id="Languages">
+                <button id="Language_Button" onclick="choose_language()">+Language</button>
+            </div>
+            <div id="Language" style="display: none;">
+                <label for="skills" style="font-weight: 900;">Language_1</label>
+                <input type="text" id="Languages">
+                <button id="Language_Button">+Language</button>
+            </div>
+        </div>
+        <div class="Divide_Col">
+            <h1>Professional Details</h1>
+
+            <label for="Summary" style="font-weight: 900;">Objective</label>
+            <div id="Summary">
+                <textarea name="Summary" id="Person_Summary" cols="41" rows="10"
+                    style="text-transform: capitalize;"></textarea>
+            </div>
+            <label for="Year" style="font-weight: 900;">Year</label>
+            <input type="text" id="Job_Year" />
+            <div id="Work_Experience">
+                <label for="Company_Name" style="font-weight: 900;">Company Name</label>
+                <input type="text" id="Company_Name">
+
+                <label for="Job position here" style="font-weight: 900;">Job position & work description</label>
+                <br>
+                <!-- <input type="text" id="Work_Information"> -->
+                <textarea id="Work_Information" rows="5px" cols="47px" style="padding:2px"></textarea>
+                <br>
+                <button id="Information_Button" onclick="Add_Job()">+Add</button>
+            </div>
+            <div id="Work_Experience_1" style="display: none;">
+                <label for="Company_Name" style="font-weight: 900;">Company Name</label>
+                <input type="text" id="Company_Name">
+
+                <label for="Job position here" style="font-weight: 900;">Job position & work description</label>
+                <br>
+                <!-- <input type="text" id="Work_Information"> -->
+                <textarea id="Work_Information" rows="5px" cols="47px" style="padding:2px"></textarea>
+                <br>
+                <button id="Information_Button" onclick="Add_Job()">+Add</button>
+            </div>
+            <div id="Reference">
+                <label for="Reference" style="font-weight: 900;">Reference</label><br>
+                <label for="name">Name</label>
+                <input type="text" id="Reference_name">
+                <label for="position">Job position, Company Name</label>
+                <input type="text" id="position" />
+                <label for="Reference_Phone">Phone</label>
+                <input type="text" id="Reference_Phone" />
+                <label for="Reference_Email">Email</label>
+                <input type="text" id="Reference_Email" />
+            </div>
+            <br>
+            <div id="Image_Pick">
+                <!-- <label for="Select">Choose Image</label>
+                <input type="file" id="Select_Image"> -->
+                <input type="file" id="Select_Image" accept="image/*">
+    <img id="Selected_Image" src="#" alt="Selected Image" style="max-width: 300px; display: none;">
+            </div>
+            <div id="button">
+                <button onclick="Submit_Data()">Submit</button>
+            </div>
+        </div>
+    </div>
+<!-- Divide Into Two Part -->
+<div class="Resume" style="display: flex;">
+    <div id="Part_1" style="color: white;">
+        <div id="Image-Block">
+            <img src="./my_profime.jpg"
+                width="150px" style="border-radius: 50%;" alt="Pls Wait" id="img_main">
+        </div>
+
+        <div id="Personal-Information">
+            <h1 id="Heading">Contact</h1>
+            <hr>
+            <br>
+            <p style="font-weight: 900;">Email</p>
+            <p id="Emailp" style="padding-bottom: 5px;">Mukul@gmail.com</p>
+            <p style="font-weight: 900;">Phone</p>
+            <p id="Phonep" style="padding-bottom: 5px;">8285xxxxx21</p>
+            <p style="font-weight: 900;">Address</p>
+            <p id="Addressp" style="padding-bottom: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt molestiae nisi in
+                ducimus voluptatum harum officia placeat.</p>
+            <p style="font-weight: 900;">COUNTRY</p>
+            <p id="Countryp">India</p>
+            <h1 id="Heading" style="margin-top: 10px;">Education</h1>
+            <hr>
+            <p id="Passing_Yearp">2018</p>
+            <p id="degree_Namep">Bachelor of Computer Application</p>
+            <p id="Collage_Namep">Aravali Collage Of Engineering</p>
+            <p id="Passing_Yearp">2018</p>
+            <p id="degree_Namep">Bachelor of Computer Application</p>
+            <p id="Collage_Namep">Aravali Collage Of Engineering</p>
+            <div>
+                <h1 id="Heading" style="margin-top: 10px;">Expertise</h1>
+                <hr>
+                <ul style="list-style-type: square; list-style-position: inside;">
+                    <li id="Skillsp">c++</li>
+                    <li id="Skillsp">Java</li>
+                    <li id="Skillsp">Dsa</li>
+                    <li id="Skillsp">Pyhon</li>
+                    <li id="Skillsp">JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h1 id="Heading" style="margin-top: 10px;">Language</h1>
+                <hr style="margin-bottom: 10px;">
+                <ul style="list-style-type: square; list-style-position: inside; ">
+                    <li id="Languagep">ENGLISH</li>
+                    <li id="Languagep">HINDI</li>
+                    <li id="Languagep">SANSKRITI</li>
+                    <li id="Languagep">English</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="Part_2" style="color: rgb(115, 115, 115);">
+        <div id="Work_Informationp">
+            <div id="Width_Information" style="height:900px;">
+                <div id="Person-Name">
+                    <h1 id="Namep" style="color: black;">Mukul Kumar</h1>
+                </div>
+
+                <p id="Person_Summaryp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis
+                    eligendi magni, hic magnam ut quos possimus, quia optio officiis fugiat tempora. Cupiditate
+                    rerum
+                    ratione suscipit impedit molestias consequuntur provident non tenetur eligendi commodi, dolores
+                    quisquam maiores corrupti odio quae ipsa, ducimus omnis quam ut sint mollitia? Quae, voluptate
+                    totam.</p>
+
+                <h1 id="Heading" style="color: black;">Experience</h1>
+                <hr>
+                <div id="Personal_Information_My" style="padding: 10px;">
+                    <h3 id="Job_Yearp">2021-2022</h3>
+                    <h3 id="Company_Namep">EAZY ERP PVT. LTD.</h3>
+                    <h4>Job position here</h4>
+                    <p id="Input_Work">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                        lorem
+                        at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                        elit at dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla
+                        volutpat
+                        dolor, hendrerit faucibus eros nibh ut nunc. Proin luctus urna id nunc sagittis dignissim.
+                        Sed
+                        in libero sed libero dictum dapibus. Vivamus fermentum est eget lorem aliquet, vel tempus
+                        metus
+                        dignissim. Donec risus arcu, tristique et sollicitudin blandit, iaculis ut nisl. Integer
+                        rutrum
+                        ultricies fringilla.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3 id="Job_Yearp">2021-2022</h3>
+                    <h3 id="Company_Namep">EAZY ERP PVT. LTD.</h3>
+                    <h4>Job position here</h4>
+                    <p id="Input_Work">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                        lorem
+                        at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                        elit at dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla
+                        volutpat
+                        dolor, hendrerit faucibus eros nibh ut nunc. Proin luctus urna id nunc sagittis dignissim.
+                        Sed
+                        in libero sed libero dictum dapibus. Vivamus fermentum est eget lorem aliquet, vel tempus
+                        metus
+                        dignissim. Donec risus arcu, tristique et sollicitudin blandit, iaculis ut nisl. Integer
+                        rutrum
+                        ultricies fringilla.</p>
+
+                </div>
+
+            </div>
+            <div style="padding: 10px;">
+                <h1 id="Reference" style="color: black;">Reference</h1>
+                <hr>
+                <p id="Reference_namep">Name Surname</p>
+                <p id="positionp">Job position, Company Name</p>
+                <label for="text" style="font-weight: 900;">Phone</label>
+                <p id="Reference_Phonep">123-456-7890</p>
+                <label style="font-weight: 900;">Email</label>
+                <p id="Reference_Emailp">Mukulved07@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <a id="Download" href="Resume_1.pdf" download="Mukul_Kumar_Resume.pdf">Download Resume</a>
+</footer>
+    
+</body>
+
+</html>
