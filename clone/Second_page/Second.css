@@ -1,0 +1,164 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a {
+
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+#hide {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 3px 20px;
+}
+
+#Category {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 3px 20px;
+}
+
+#Sizes {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 3px 20px;
+}
+
+#Brand {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 3px 20px;
+}
+
+#Color {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 5px 0px;
+    margin: 3px;
+}
+
+#Design {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 3px 20px;
+}
+
+#Sleeve {
+    display: none;
+    /* margin-left: -15px; */
+    padding: 3px 20px;
+}
+
+/* .Gender {
+
+    background-color: aqua;
+} */
+
+.Super_Div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* margin-top: 100px; */
+
+}
+
+/* .left_container{
+    width: 30%; */
+/* } */
+.right_container {
+    width: 100%;
+    padding: 10px 10px;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.left_container {
+    padding: 10px;
+    position: fixed;
+    width: 250px;
+    /* top: 0%; */
+}
+
+.First_Div_1 {
+    width: 250px;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.Gender #unhide {
+    text-align: left;
+    list-style: none;
+    /* margin-left: -35px; */
+    padding: 12px 5px;
+    width: 240px;
+}
+
+#title {
+    font-family: montserrat-regular, sans-serif !important;
+    font-size: 10px;
+    color: #737373 !important;
+    line-height: 12px !important;
+}
+
+#description #button_Price {
+    width: 90px;
+    padding: 2px;
+    font-size: 10px;
+}
+
+.heart-btn {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    float: right;
+
+}
+
+.heart-btn:hover {
+    transform: scale(1.1);
+}
+
+#Item_Name {
+    margin-top: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: montserrat-regular, sans-serif !important;
+    font-size: 10px !important;
+    line-height: 12px !important;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 4px;
+    margin: 10px;
+}
+#page-open{
+    font-family: montserrat-regular,sans-serif;
+    font-size: 12px;
+    color: #2d2d2d;
+}
+#Heading_Part_2{
+padding: 10px; 
+margin-left:10%;
+height: 140px;
+margin-top: 20px;
+}
+.First_Div_1:hover{
+    opacity: 0.7;
+}
