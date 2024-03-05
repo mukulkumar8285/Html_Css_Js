@@ -1,0 +1,25 @@
+#root{
+    text-align: center;
+}
+.List{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: purple;
+    padding: 10px;
+}
+img{
+    object-fit: fill;
+}
+.para{
+    background-color: gray;
+    padding: 15px;
+    width: 30%;
+    margin: auto;
+}
+.bg{
+    width: 100%;
+    height: 200px;
+    background-color: purple;
+    padding: 20px;
+}
